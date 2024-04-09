@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Floor = new System.Windows.Forms.PictureBox();
             this.Avatar = new System.Windows.Forms.PictureBox();
             this.score = new System.Windows.Forms.Label();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Floor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +66,12 @@
             this.score.Text = "Score: 0";
             this.score.Click += new System.EventHandler(this.label1_Click);
             // 
+            // gameTimer
+            // 
+            this.gameTimer.Enabled = true;
+            this.gameTimer.Interval = 20;
+            this.gameTimer.Tick += new System.EventHandler(this.gameEvent);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -74,6 +82,8 @@
             this.Controls.Add(this.Floor);
             this.Name = "Form1";
             this.Text = "SL2aGame";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.downAction);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.upAction);
             ((System.ComponentModel.ISupportInitialize)(this.Floor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar)).EndInit();
             this.ResumeLayout(false);
@@ -86,6 +96,7 @@
         private System.Windows.Forms.PictureBox Floor;
         private System.Windows.Forms.PictureBox Avatar;
         private System.Windows.Forms.Label score;
+        private System.Windows.Forms.Timer gameTimer;
     }
 }
 

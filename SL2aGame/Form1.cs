@@ -21,5 +21,20 @@ namespace SL2aGame
         {
 
         }
+
+        private void gameEvent(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downAction(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void upAction(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }
