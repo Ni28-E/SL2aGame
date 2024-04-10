@@ -54,7 +54,7 @@ namespace SL2aGame
                 isJumping = false;
             }
 
-            if (Avatar.Top >= 380 && !isJumping)
+            if (Avatar.Top >= 380 && !isJumping) //keeps the avatar from falling trough the floor
             {
                 jumpForce = 12;
                 Avatar.Top = Floor.Top - Avatar.Height;
