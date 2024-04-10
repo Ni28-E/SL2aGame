@@ -15,7 +15,7 @@ namespace SL2aGame
         Random rnd = new Random();//makes a new random classs
         bool isJumping = false; //this variable says when the avatar is jumping or not
         int jumpSpeed = 10; //this variable defines how fast the avatar jumps
-        int jumpForce = 10; //this variable defines how high the avatar jumps
+        int jumpForce = 12; //this variable defines how high the avatar jumps
         int obstacleSpeed = 10; //this variable defines how fast the obstacles come at the avatar
         int scoreCount = 0;//this variable will track the amount of points the player has obtained
 
@@ -53,12 +53,19 @@ namespace SL2aGame
             {
                 isJumping = false;
             }
+
+            if (Avatar.Top >= 380 && !isJumping)
+            {
+                jumpForce = 12;
+                Avatar.Top = Floor.Top - Avatar.Height;
+                jumpSpeed = 0;
+            }
         }
 
         public void resetGame()
         {   
             Avatar.Top = Floor.Top - Avatar.Height;
-            jumpForce = 10;
+            jumpForce = 12;
             isJumping = false;
             scoreCount = 0;
 
