@@ -82,8 +82,8 @@
             this.Controls.Add(this.Floor);
             this.Name = "Form1";
             this.Text = "SL2aGame";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.downAction);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.upAction);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyPressed);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyReleased);
             ((System.ComponentModel.ISupportInitialize)(this.Floor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar)).EndInit();
             this.ResumeLayout(false);

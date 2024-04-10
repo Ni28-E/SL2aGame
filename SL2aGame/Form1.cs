@@ -37,19 +37,30 @@ namespace SL2aGame
 
         }
 
-        private void downAction(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void upAction(object sender, KeyEventArgs e)
-        {
-
-        }
-
         public void resetGame()
         {
 
+        }
+
+        private void keyPressed(object sender, KeyEventArgs e)
+        {   
+            //if the space key is pressed then the game will check wether the jumping boolean is set to true
+            if (e.KeyCode == Keys.Space && !isJumping)
+            {
+                isJumping = true;
+            }
+        }
+
+        private void keyReleased(object sender, KeyEventArgs e)
+        {
+            if (isJumping) {//if the key is released and isJumping is set to true then it will be set to false so that the avatar is no longer jumping
+                isJumping = false;
+            }
+
+            if (e.KeyCode == Keys.Q)//if the q key is pressed and subsequently released then the game will reset
+            {
+                resetGame();
+            }
         }
     }
 }
