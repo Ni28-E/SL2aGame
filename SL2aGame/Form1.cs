@@ -34,7 +34,7 @@ namespace SL2aGame
 
         private void gameEvent(object sender, EventArgs e)
         {
-
+            Avatar.Top += jumpSpeed;
         }
 
         public void resetGame()
