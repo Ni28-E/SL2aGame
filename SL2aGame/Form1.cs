@@ -35,11 +35,35 @@ namespace SL2aGame
         private void gameEvent(object sender, EventArgs e)
         {
             Avatar.Top += jumpSpeed;
+
+            //shows the score in the score label
+            score.Text = "Score: " + scoreCount;
+
+            if (isJumping)
+            {
+                jumpSpeed = -10;
+                jumpForce -= 1;
+            }
+            else
+            {
+                jumpSpeed = 10;
+            }
+
+            if(isJumping && jumpForce < 0)//makes it so that you eventually stop going up and fall to the ground
+            {
+                isJumping = false;
+            }
         }
 
         public void resetGame()
-        {
+        {   
+            Avatar.Top = Floor.Top - Avatar.Height;
+            jumpForce = 10;
+            isJumping = false;
+            scoreCount = 0;
 
+
+            gameTimer.Start(); //starts the timer
         }
 
         private void keyPressed(object sender, KeyEventArgs e)
