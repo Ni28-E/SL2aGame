@@ -104,9 +104,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::SL2aGame.Properties.Resources.obstacle_fire;
-            this.pictureBox3.Location = new System.Drawing.Point(356, 233);
+            this.pictureBox3.Location = new System.Drawing.Point(455, 249);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(162, 204);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
