@@ -125,6 +125,11 @@ namespace SL2aGame
             {
                 isJumping = true;
             }
+
+            if (e.KeyCode == Keys.Escape)//if the escape button is clicked then the window closes
+            {
+                Close();
+            }
         }
 
         // This function resets the user's jump state. -B
