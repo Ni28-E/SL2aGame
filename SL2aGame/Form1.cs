@@ -119,9 +119,9 @@ namespace SL2aGame
         }
 
         // This function checks if the user is allowed to jump based on the correct conditions. -B
-        private void downAction(object sender, KeyEventArgs e)
+        private void KeyPressed(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Space && isJumping == false)
+            if (e.KeyCode == Keys.Space && isJumping == false)
             {
                 isJumping = true;
             }
@@ -129,9 +129,9 @@ namespace SL2aGame
 
         // This function resets the user's jump state. -B
         // When the user is game over and presses the correct button it'll call resetGame function. -B
-        private void upAction(object sender, KeyEventArgs e)
+        private void KeyReleased(object sender, KeyEventArgs e)
         {
-            if(isJumping == true)
+            if (isJumping == true)
             {
                 isJumping = false;
             }
@@ -168,5 +168,7 @@ namespace SL2aGame
 
             gameTimer.Start();
         }
+
+        
     }
 }
