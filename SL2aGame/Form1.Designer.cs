@@ -61,6 +61,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::SL2aGame.Properties.Resources.obstacle_berrybush;
             this.pictureBox2.Location = new System.Drawing.Point(421, 428);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(16, 24);
@@ -71,6 +72,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::SL2aGame.Properties.Resources.obstacle_hydrant;
             this.pictureBox1.Location = new System.Drawing.Point(261, 428);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(16, 24);
@@ -91,22 +93,22 @@
             // Avatar
             // 
             this.Avatar.BackColor = System.Drawing.Color.Transparent;
+            this.Avatar.Image = global::SL2aGame.Properties.Resources.Avatar;
             this.Avatar.Location = new System.Drawing.Point(46, 405);
             this.Avatar.Name = "Avatar";
             this.Avatar.Size = new System.Drawing.Size(24, 48);
             this.Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Avatar.TabIndex = 1;
             this.Avatar.TabStop = false;
-            this.Avatar.Click += new System.EventHandler(this.Avatar_Click);
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = global::SL2aGame.Properties.Resources.obstacle_fire;
             this.pictureBox3.Location = new System.Drawing.Point(356, 233);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 50);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_3);
             // 
             // Form1
             // 

@@ -173,30 +173,5 @@ namespace SL2aGame
 
             gameTimer.Start();
         }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Avatar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click_3(object sender, EventArgs e)
-        {
-
-        }
     }
 }
